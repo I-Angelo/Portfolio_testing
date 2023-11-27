@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import '../Styles/Menu.css'
+import '../Styles/GreetingMessage.css'
 
 const GreetingMessage = () => {
   console.log('GreetingMessage component mounted');

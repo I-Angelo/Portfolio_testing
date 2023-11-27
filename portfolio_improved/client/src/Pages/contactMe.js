@@ -24,7 +24,7 @@ function ContactMe() {
       data[key] = value;
     });
 
-    axios.post('http://localhost:8080/contact_me', data)
+    axios.post('https://noisy-quickest-jeep.glitch.me/contact_me', data)
       .then((response) => {
         console.log(response.data);
         setSubmitted(true);

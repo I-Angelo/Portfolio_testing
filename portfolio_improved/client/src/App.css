@@ -8,5 +8,9 @@ body {
     height: 100vh;
     margin: 0; /* Remove default body margins */
     color: rgb(47, 119, 164);
+    background-size: cover;
+    z-index: -50;
+
+    /* position: absolute; */
   }
   

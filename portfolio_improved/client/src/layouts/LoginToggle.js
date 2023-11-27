@@ -3,9 +3,7 @@ import React, { useState } from 'react';
 import LogInIcon from './loginIcon';
 import '../Styles/Menu.css';
 import { Link } from 'react-router-dom';
-import '../Styles/logInToggle.css'
-
-
+import '../Styles/logInToggle.css';
 
 const LoginToggle = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -22,7 +20,6 @@ const LoginToggle = () => {
         <LogInIcon icon={<i className="fas fa-envelope"></i>} />
       </label>
       <div className="custom-dropdown">
-        {/* <a href="#">Log In</a> */}
         {isLoggedIn ? <Link to="/logout">Log Out</Link> : <Link to="/login">Log In</Link>}
       </div>
     </div>
@@ -30,10 +27,6 @@ const LoginToggle = () => {
 };
 
 export default LoginToggle;
-
-
-
-
 
 
     // <Link className="#" to="/login"></Link>
