@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import sphere2 from '../static/sphere2.gif';
-import WelcomePage from './WelcomePage';
+import '../Styles/LogIn.css'
 
 const Login = ({ onLogin }) => {
     const navigate = useNavigate();
@@ -48,34 +48,37 @@ const Login = ({ onLogin }) => {
     };
     
     return (
-        <>
         <div>
-        <h2>Login Page</h2>
-        {attempts >= 3 ? (
-        <label>
-        Username:
-        <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
-        </label>
-    ) : null}
-        <br />
-        <label>
-            Password:
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </label>
-        <br />
-        <button onClick={handleLogin}>Login</button>
-        </div>
+            <div className='login'>
+                <div>
+                    <h2>Login Page</h2>
+                {attempts >= 3 ? (
+                    <label>
+                    Username:
+                    <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+                    </label>
+            ) : null}
+                <br />
+                    <label>
+                        Password:
+                        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                    </label>
+                <br />
+                    <button onClick={handleLogin}>Login</button>
+                </div>
 
-        <div className="button-container">
-        <Link to="/" className="home-link-button">
-        <div className="button-content">
-            <img src={sphere2} alt="Sphere" className="button-image" />
-            <span>Go Back to Home</span>
-        </div>
-        </Link>
-        </div>
+                <div className="button-container">
+                <Link to="/" className="home-link-button">
+                <div className="button-content">
+                    <img src={sphere2} alt="Sphere" className="button-image" />
+                    <span>Go Back to Home</span>
+                </div>
+                </Link>
+                </div>
 
-    </>
+            </div>
+
+        </div>
     );
     };
 
