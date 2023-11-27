@@ -33,7 +33,7 @@
 .title h1 {
     color: rgb(47, 119, 164);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the shadow values as needed */
-    font-size: 24px;
+    font-size: 35px !important;
     margin: 5px 5px;
     padding: 5px;
   }
@@ -107,11 +107,11 @@
 
   /* Assign different background colors to each sub div */
 .project-subsection:nth-child(1) {
-    background-color: #485BFF; /* Red */
+    background-color: #60BEFF; /* Red */
   }
   
   .project-subsection:nth-child(2) {
-    background-color: #72CDAB; /* Green */
+    background-color: #60BEFF; /* Green */
   }
   
   .project-subsection:nth-child(3) {
@@ -119,5 +119,5 @@
   }
   
   .project-subsection:nth-child(4) {
-    background-color: #FFCC35; /* Yellow */
+    background-color: #60BEFF; /* Yellow */
   }

@@ -57,6 +57,9 @@ const GitHubRepoCarousel = () => {
     <div className="repo-container">
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}
     >
+      <div className='title'>
+        <h1>GitHub</h1>
+      </div>
     <div className="mobile-view">
       <Slider
         {...carouselSettings}

@@ -22,6 +22,9 @@ function Projects() {
         <div className="projects-container">
         <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}
         >
+            {/* <div>
+        <h1>Projects</h1>
+      </div> */}
             <div className='title'>
                 <h1>Projects completed</h1>
                 <h1>and</h1>
