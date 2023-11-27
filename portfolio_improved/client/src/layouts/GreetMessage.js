@@ -1,0 +1,21 @@
+// WelcomeMessage.js
+
+import React from 'react';
+import { motion } from 'framer-motion';
+import '../Styles/Menu.css'
+
+const GreetingMessage = () => {
+  console.log('GreetingMessage component mounted');
+  const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0 } };
+  const enterAnimation = { opacity: 1, transition: { duration: 1, delay: 0 } };
+
+  return (
+    <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
+      <div className='parent'>
+        <div className='welcome'>Welcome to my Portfolio!</div>
+      </div>
+    </motion.div>
+  );
+};
+
+export default GreetingMessage;

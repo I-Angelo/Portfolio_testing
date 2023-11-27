@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    /* overflow: hidden; */
+    background-image: url('./static/computer-code-3d-popping-out-of-2-monitors-upscaled.png');
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; /* Ensure the image covers the entire viewport */
+    width: 100vw;
+    height: 100vh;
+    margin: 0; /* Remove default body margins */
+    color: rgb(47, 119, 164);
+  }
+  
