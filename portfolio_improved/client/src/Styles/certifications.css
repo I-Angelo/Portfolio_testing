@@ -32,6 +32,9 @@ body {
     font-size-adjust: 15px !important;
   }
 
+  .about-me-contentB {
+    margin-top: -75px;
+  }
 
   .about-me-content {
     padding: 20px;

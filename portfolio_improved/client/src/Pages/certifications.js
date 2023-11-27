@@ -18,7 +18,7 @@ function Certifications() {
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
     <div class="scroll-container">
     <div className="about-me-container">
-        <div className='about-me-content'>
+        <div className='about-me-contentB'>
             <h1>Certifications</h1>
         </div>
       {/* Content */}

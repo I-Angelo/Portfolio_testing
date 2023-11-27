@@ -16,6 +16,8 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the shadow values as needed */
   font-size: 50px !important;
   margin: 5px 5px;
+  margin-bottom: 150px !important;
+  margin-top: 100px !important;
   padding: 5px;
 }
 
@@ -114,7 +116,7 @@ h2 {
 
 .repo-container {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-height: 100vh; /* Adjust the desired height as needed */

@@ -54,6 +54,7 @@ const GitHubRepoCarousel = () => {
   };
 
   return (
+  
     <div className="repo-container">
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}
     >
@@ -97,6 +98,7 @@ const GitHubRepoCarousel = () => {
       </div>
     </motion.div>
     </div>
+
   );
 };
 
