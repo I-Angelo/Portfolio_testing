@@ -1,3 +1,6 @@
+
+// AnimatedRoutes.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Menu from '../../Pages/Menu';
@@ -9,11 +12,10 @@ import Certifications from '../../Pages/certifications';
 import Error from '../../Pages/Error';
 import Login from '../../Pages/Login';
 import '../../Styles/AnimatedRoutes.css';
-
-
 import { AnimatePresence } from 'framer-motion'; //. if a bug is present try this instead "framer-motion/dist/framer-motion"
 import WelcomePage from '../../Pages/WelcomePage';
 import DataDisplay from '../../Pages/dataBaseData';
+import PDFViewer from '../../Pages/Resume';
 
 console.log('Creating router...');
 
@@ -57,6 +59,9 @@ function AnimatedRoutes() {
 
           {/* Route for About Me */}
           <Route path="/logout" element={<Menu />} />
+
+          {/* Route for About Me */}
+          <Route path="/resume" element={<PDFViewer />} />
 
           {/* Add more routes as needed */}
       </Routes>

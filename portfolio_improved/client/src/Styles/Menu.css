@@ -1,12 +1,5 @@
 /* Menu.css */
 
-/* body {
-    overflow: hidden; 
-    background: #2c2c78;
-    background: linear-gradient(to right, #526383, #113675) ;
-    overflow: hidden;
-} */
-
 .menu {
     position: fixed;
     display: block;
@@ -48,12 +41,9 @@
     position: absolute;
     top: -45px; /* Adjust the top distance as needed */
     right: 0;
-    /* background-color: transparent; */
-    /* border: 1px solid #ccc; */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: max-height 0.3s ease; /* Smooth transition for max-height */
-    /* overflow: hidden; */
     max-height: 0;
     background-color: rgb(83, 117, 216);
   }
@@ -78,39 +68,12 @@
   
   .custom-dropdown a {
     display: block;
-    /* position:absolute; */
     padding: 10px;
     text-decoration: none;
     color: #333;
     transition: background-color 0.3s ease; /* Smooth transition for background-color */
     z-index: 3;
 }
-  
-  /* .custom-dropdown a:hover { */
-    /* background-color: #f0f0f0; */
-  /* } */
-  
-/* Welcome message in the menu */
-/*
-.parent {
-    position: fixed; /* or position: absolute; 
-    top: 50%;
-    margin-top: -20vh; /* Adjust this value as needed 
-    width: 75%;
-    text-align: center;
-    background-color: rgba(218, 208, 208, 0);
-    color: rgb(22, 64, 214);
-}
-
-  
-  .welcome {
-    color: rgb(22, 64, 214); /* Change to white for testing
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-size: 40px;
-    animation: fadeInAndMove 3s ease-out; /* Remove "forwards" for now 
-  }
-  
-  */
   
   @keyframes fadeInAndMove {
     0% {
@@ -177,59 +140,61 @@
 }
 /* translateY determines the distance between the toggle button and menu */
 .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
-    transform: rotate(0deg) translateY(-200px) translateX(0);
+    transform: rotate(0deg) translateY(-150px) translateX(0);
 }
 
 .menu-toggler:checked ~ ul .menu-item:nth-child(2) {
-    transform: rotate(60deg) translateY(-200px) translateX(0);
+    transform: rotate(51.428571deg) translateY(-150px) translateX(0);
 }
 
 .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
-    transform: rotate(120deg) translateY(-200px) translateX(0);
+    transform: rotate(102.85714deg) translateY(-150px) translateX(0);
 }
 
 .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
-    transform: rotate(180deg) translateY(-200px) translateX(0);
+    transform: rotate(154.285713deg) translateY(-150px) translateX(0);
 }
 
 .menu-toggler:checked ~ ul .menu-item:nth-child(5) {
-    transform: rotate(240deg) translateY(-200px) translateX(0);
+    transform: rotate(205.714284deg) translateY(-150px) translateX(0);
 }
 
 .menu-toggler:checked ~ ul .menu-item:nth-child(6) {
-    transform: rotate(300deg) translateY(-200px) translateX(0);
+    transform: rotate(257.142855deg) translateY(-150px) translateX(0);
+}
+
+.menu-toggler:checked ~ ul .menu-item:nth-child(7) {
+    transform: rotate(308.571426deg) translateY(-150px) translateX(0);
 }
 
 .menu-toggler:checked ~ ul .menu-item a {
     pointer-events: auto;
 }
 
-/* Rotation of content to become horicontal */
+/* Rotation of content to become horizontal */
 
 .menu-item:nth-child(2) a {
-    transform: rotate(-60deg) ;
+    transform: rotate(-51.428571deg) ;
 }
 
 .menu-item:nth-child(3) a {
-    transform: rotate(-120deg) ;
+    transform: rotate(-102.85714deg) ;
 
 }.menu-item:nth-child(4) a {
-    transform: rotate(-180deg) ;
+    transform: rotate(-154.285713deg) ;
 }
 
 .menu-item:nth-child(5) a {
-    transform: rotate(-240deg) ;
+    transform: rotate(-205.714284deg) ;
 }
 
 .menu-item:nth-child(6) a {
-    transform: rotate(-300deg) ;
+    transform: rotate(-257.142855deg) ;
 }
 
-/* ul .menu-item:nth-child(6) a {
-    opacity: 5;
-} */
-
-
+.menu-item:nth-child(7) a {
+    transform: rotate(-308.571426deg) ;
+}
 
 
 .menu-toggler + label {
@@ -278,7 +243,6 @@
     position: fixed;
     display: flex; /*Center content horizontally*/
     justify-content: center; /* Center content horizontally */
-    /*align-items: center; /* Remove this line to align content horizontally only */
     top: 0;
     bottom: 0;
     left: 0;
@@ -304,11 +268,12 @@
     transition: transform 0.5s; /* Add a transition for smooth rotation */
 }
 
+/* CIRCLES SIZE - color */
 
 .menu-item a.menu-item-index {
     display: block;
-    width: 175px; /* Here is determined the size of the circles in the menu items up to 200px everywhere else in the css files*/
-    height: 175px;
+    width: 125px; /* Here is determined the size of the circles in the menu items up to 200px everywhere else in the css files*/
+    height: 125px;
     line-height: 40px; /* Space between two sentences in the circle menu item*/
     color: rgba(255, 255, 255, 0.7);
     background: rgb(21, 35, 41);
@@ -318,8 +283,7 @@
     font-size: 20px;
     pointer-events: none;
     transition: 0.2s;
-    /* z-index: 3 !important; */
-    /* filter: saturate(200%); */
+
     
     /* Center the content horizontally */
     display: flex;
@@ -338,7 +302,6 @@ a {
     position: relative;
     -webkit-box-reflect: below 5px linear-gradient(transparent, rgba(0,0,0,.1));
     font-size: 20px;
-    /* z-index: -1 !important; */
   }
 
 
@@ -377,13 +340,6 @@ a {
     transition: transform 0.5s ease; /* Add a transition for smooth rotation */
   }
 
-  /* .raise:hover,
-.raise:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
-  color: #ffa260
-} */
-
 .parent {
     margin-top: 75px;
     width: 100%;
@@ -417,31 +373,35 @@ a {
   
   
     .menu-item a.menu-item-index {
-      width: 125px; /* Reduce the width of menu item circles */
-      height: 125px; /* Reduce the height of menu item circles */
-      font-size: 16px; /* Reduce the font size for menu item text */
+      width: 75px; /* Reduce the width of menu item circles */
+      height: 75px; /* Reduce the height of menu item circles */
+      font-size: 8px; /* Reduce the font size for menu item text */
     }
     .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
-        transform: rotate(0deg) translateY(-140px) translateX(0);
+        transform: rotate(0deg) translateY(-100px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(2) {
-        transform: rotate(60deg) translateY(-140px) translateX(0);
+        transform: rotate(51.428571deg) translateY(-100px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
-        transform: rotate(120deg) translateY(-140px) translateX(0);
+        transform: rotate(102.85714deg) translateY(-100px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
-        transform: rotate(180deg) translateY(-140px) translateX(0);
+        transform: rotate(154.285713deg) translateY(-100px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(5) {
-        transform: rotate(240deg) translateY(-140px) translateX(0);
+        transform: rotate(205.714284deg) translateY(-100px) translateX(0);
     }
     .menu-toggler:checked ~ ul .menu-item:nth-child(6) {
-        transform: rotate(300deg) translateY(-140px) translateX(0);
+        transform: rotate(257.142855deg) translateY(-100px) translateX(0);
+    }
+
+    .menu-toggler:checked ~ ul .menu-item:nth-child(7) {
+        transform: rotate(308.571426deg) translateY(-100px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item a {
@@ -451,23 +411,28 @@ a {
     /* Rotation of content to become horicontal */
 
     .menu-item:nth-child(2) a {
-        transform: rotate(-60deg) ;
+        transform: rotate(-51.428571deg) ;
     }
 
     .menu-item:nth-child(3) a {
-        transform: rotate(-120deg) ;
+        transform: rotate(-102.85714deg) ;
 
     }.menu-item:nth-child(4) a {
-        transform: rotate(-180deg) ;
+        transform: rotate(-154.285713deg) ;
     }
 
     .menu-item:nth-child(5) a {
-        transform: rotate(-240deg) ;
+        transform: rotate(-205.714284deg) ;
         /* z-index: 1; */
     }
 
     .menu-item:nth-child(6) a {
-        transform: rotate(-300deg) ;
+        transform: rotate(-257.142855deg) ;
+        /* filter: saturate(200%); */
+    }
+
+    .menu-item:nth-child(7) a {
+        transform: rotate(-308.571426deg) ;
         /* filter: saturate(200%); */
     }
 

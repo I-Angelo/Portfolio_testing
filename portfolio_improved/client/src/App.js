@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       {/* You can include any global styles or common components here if needed */}
+      <div className="background"></div>
       <Routes>
         <Route path="/*" element={<AnimatedRoutes />} />
       </Routes>

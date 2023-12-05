@@ -1,3 +1,5 @@
+//Menu.js
+
 import React, { useState } from 'react';
 import '../Styles/Menu.css'; // Import your CSS file for styling
 import LoginToggle from '../layouts/LoginToggle';

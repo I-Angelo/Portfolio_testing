@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import '../Styles/Menu.css'
 import tesseractImage from '../static/Tesseract-1Kb.gif';
 import { Link } from 'react-router-dom';
+// import "../PDF/UPDATED_Ivan_Angulo_Engineer_1.pdf"
 
 const MenuToggle = () => {
   console.log('MenuToggle component mounted');
@@ -75,6 +76,15 @@ return (
                 <Link className="menu-item-index " to="/contact">
                 Contact Me
                 </Link>
+                </li>
+                <li className="menu-item ">
+                <a
+                    className="menu-item-index "
+                    target='_blank'
+                    rel='nonreferrer'
+                    href='/PDF/UPDATED_Ivan_Angulo_Engineer_1.pdf' > {/*ALthough we used a more detailed path everywhere else, here we used a relative path */}
+                    Resume
+                </a>
                 </li>
             </ul>
             </nav>
