@@ -1,8 +1,5 @@
 body {
-    /* overflow: hidden; */
-    background: #2c2c78;
-    background: #2c2c78;
-    background: linear-gradient(to right, #526383, #113675);
-    /* overflow: hidden; */
-    /* background-color: red !important; */
+
+    background: rgb(240,235,229);
+    background: radial-gradient(circle, rgba(240,235,229,1) 0%, rgba(240,235,229,1) 10%, rgba(64,0,230,1) 100%);
 }

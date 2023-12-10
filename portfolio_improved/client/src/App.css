@@ -14,7 +14,7 @@ body, html {
     padding-top: 120px;
     width: 100%;
     height: 900px;
-    background-image: url('./static/Firefly2-2b.jpeg'); /* Replace with your image path */
+    /*background-image: url('./static/Firefly2-2b.jpeg'); /* Replace with your image path */
     background-repeat: no-repeat;
     background-size: 100% 1100px;
     background-position: center; /* Center the background image */
@@ -29,7 +29,8 @@ body, html {
    */
   .App {
     /* position: relative; */
-     color: rgb(47, 119, 164);
+    background: rgb(240,235,229);
+    background: radial-gradient(circle, rgba(240,235,229,1) 0%, rgba(64,0,230,1) 100%);
     /* Add styles for other content elements */
     /* These styles will be placed on top of the background */
   }

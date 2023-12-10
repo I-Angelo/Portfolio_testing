@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import '../Styles/Menu.css'
-import tesseractImage from '../static/Tesseract-1Kb.gif';
+import workstation from '../static/5243758.jpg';
 import { Link } from 'react-router-dom';
 // import "../PDF/UPDATED_Ivan_Angulo_Engineer_1.pdf"
 
@@ -36,10 +36,10 @@ return (
                 checked={menuOpen}
                 onChange={toggleMenu}
             />
-            <div className="menu">
-            <div className={`tesseract-image ${menuOpen ? 'open' : ''}`}>
-                <img src={tesseractImage} alt="Tesseract" />
-            </div>
+            <div className="menu pulsate-menu-image">
+                <div className={`tesseract-image ${menuOpen ? 'open' : ''}`}>
+                    <img src={workstation} alt="Tesseract" />
+                </div>
             </div>
             <ul>
                 <li className="menu-item ">
