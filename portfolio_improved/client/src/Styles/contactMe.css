@@ -1,11 +1,23 @@
 /* contactMe.css */
 
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 .contact-me-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Adjust the desired height as needed */
+  margin-top: 100px;
+   /* Below adjust the desired height as needed */
+  min-height: 60vh;
+
 }
 
 .contact-me-content {
@@ -13,7 +25,7 @@
   color: rgb(47, 119, 164);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the shadow values as needed */
   font-size: 25px;
-  margin: 5px 5px;
+  margin: 5px 5px 100px 5px;
   padding: 5px;
 }
 
@@ -30,7 +42,6 @@
   flex-direction: row; /* Display children in a row */
   justify-content: center; /* Center the two columns */
   align-items: stretch; /* Stretch items to full height */
-  /* height: 900px; */
   color: aliceblue;
 }
 

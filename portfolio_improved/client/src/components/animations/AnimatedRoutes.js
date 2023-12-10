@@ -16,6 +16,7 @@ import { AnimatePresence } from 'framer-motion'; //. if a bug is present try thi
 import WelcomePage from '../../Pages/WelcomePage';
 import DataDisplay from '../../Pages/dataBaseData';
 import PDFViewer from '../../Pages/Resume';
+import RootLayout from '../../layouts/RootLayOut';
 
 console.log('Creating router...');
 
@@ -24,47 +25,56 @@ function AnimatedRoutes() {
 
   const location = useLocation();
 
+  const isHomePage = location.pathname === '/';
+
   return (
     <AnimatePresence wait>
-      <Routes location={location} key={location.pathname}>
-          {/* Define the default route (home) */}
-          <Route path="/" element={<Menu />} />
+       {!isHomePage && (
+        <RootLayout>
+          <Routes location={location} key={location.pathname}>
+              {/* Define the default route (home) */}
+              {/* <Route path="/" element={<Menu />} /> */}
 
-          {/* Route for the GitHubRepoCarousel component with a dynamic parameter */}
-          <Route path="/github-carousel/:repoOwner" element={<GitHubRepoCarousel />} />
-          
-          {/* Route for About Me */}
-          <Route path="/about" element={<AboutMe />} />
+                  <Route path="/github-carousel/:repoOwner" element={<GitHubRepoCarousel />} />
+                  
+                  {/* Route for About Me */}
+                  <Route path="/about" element={<AboutMe />} />
 
-          {/* Route for About Me */}
-          <Route path="/contact" element={<ContactMe />} />
+                  {/* Route for About Me */}
+                  <Route path="/contact" element={<ContactMe />} />
 
-          {/* Route for About Me */}
-          <Route path="/projects" element={<Projects />} />
+                  {/* Route for About Me */}
+                  <Route path="/projects" element={<Projects />} />
 
-          {/* Route for About Me */}
-          <Route path="/certifications" element={<Certifications />} />
+                  {/* Route for About Me */}
+                  <Route path="/certifications" element={<Certifications />} />
 
-          {/* Route for About Me */}
-          <Route path='/*' element={<Error />} />
-          
-          {/* Route for About Me */}
-          <Route path="/login" element={<Login />} />
-          
-          {/* Route for About Me */}
-          <Route path="/welcome" element={<WelcomePage />} />
+                  {/* Route for About Me */}
+                  <Route path='/*' element={<Error />} />
+                  
+                  {/* Route for About Me */}
+                  <Route path="/login" element={<Login />} />
+                  
+                  {/* Route for About Me */}
+                  <Route path="/welcome" element={<WelcomePage />} />
 
-          {/* Route for About Me */}
-          <Route path="/data" element={<DataDisplay />} />
+                  {/* Route for About Me */}
+                  <Route path="/data" element={<DataDisplay />} />
 
-          {/* Route for About Me */}
-          <Route path="/logout" element={<Menu />} />
+                  {/* Route for About Me */}
+                  <Route path="/logout" element={<Menu />} />
 
-          {/* Route for About Me */}
-          <Route path="/resume" element={<PDFViewer />} />
+                  {/* Route for About Me */}
+                  <Route path="/resume" element={<PDFViewer />} />
 
-          {/* Add more routes as needed */}
-      </Routes>
+                  {/* Add more routes as needed */}
+            </Routes>
+        </RootLayout>
+         )}
+
+          <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Menu />} />
+          </Routes>
     </AnimatePresence>
   )
 }

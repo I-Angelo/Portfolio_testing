@@ -82,7 +82,7 @@ return (
                     className="menu-item-index "
                     target='_blank'
                     rel='nonreferrer'
-                    href='/PDF/UPDATED_Ivan_Angulo_Engineer_1.pdf' > {/*ALthough we used a more detailed path everywhere else, here we used a relative path */}
+                    href='/PDF/UPDATED-Engineer2.pdf' > {/*ALthough we used a more detailed path everywhere else, here we used a relative path */}
                     Resume
                 </a>
                 </li>

@@ -1,0 +1,26 @@
+.button-container-B {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 75px;
+  }
+  
+/* Style for the button link */
+.home-link-button-B {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: rgb(47, 119, 164);
+}
+
+/* Style for the button image */
+.home-link-button-B img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.button-content {
+    text-align: center;
+}

@@ -73,14 +73,14 @@ const DataDisplay = () => {
           </div>
         ))}
       </div>
-      <div className="button-container">
+      {/* <div className="button-container">
         <Link to="/" className="home-link-button">
         <div className="button-content">
             <img src={sphere2} alt="Sphere" className="button-image" />
             <span>Go Back to Home</span>
         </div>
         </Link>
-        </div>
+        </div> */}
     </div>
   );
 };

@@ -1,5 +1,16 @@
 /* aboutMe.css */
 
+
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 body {
   overflow: auto;
   margin: 0; /* Reset default body margin */
@@ -26,7 +37,7 @@ body {
   padding-top: 20px;
   padding: 0 20px; /* Add padding to the sides */
   width: 85%;
-  margin-top: 20px !important;
+  margin-top: 70px !important;
   /* Set a maximum width */
   margin: 0 auto; /* Center the container horizontally */
 }
@@ -66,26 +77,26 @@ body {
   height: auto;
   border-radius: 50%;
 }
-
+/*
 .button-container-A {
   margin-top: 20px;
   margin-bottom: 50px;
 }
 
-  /* Style for the button link */
+  /* Style for the button link 
   .home-link-button {
     text-decoration: none;
     color: rgb(47, 119, 164);
   }
   
-  /* Style for the button image */
+  /* Style for the button image 
   .home-link-button img {
     width: 100px;
     height: auto;
     display: block;
     margin: 0 auto;
   }
-  
+  */
   /* Picture */
   .Profile-pic-A {
     width: 170px !important;

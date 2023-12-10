@@ -54,11 +54,11 @@ const GitHubRepoCarousel = () => {
   };
 
   return (
-  
-    <div className="repo-container">
+  // className="repo-container"
+    <div > 
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}
     >
-      <div className='title'>
+      <div className='title-G'>
         <h1>GitHub</h1>
       </div>
     <div className="mobile-view">
@@ -88,14 +88,6 @@ const GitHubRepoCarousel = () => {
         )}
       </Slider>
     </div>
-    <div className="button-container">
-        <Link to="/" className="home-link-button">
-          <div className="button-content">
-            <img src={hurricane} alt="Pyramid" className="button-image" />
-            <span>Go Back to Home</span>
-          </div>
-        </Link>
-      </div>
     </motion.div>
     </div>
 

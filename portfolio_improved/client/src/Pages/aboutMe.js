@@ -1,10 +1,8 @@
 import React from 'react';
-import sphere from '../static/pyramid-double.gif';
 import profile from '../static/PROFILE_PIC.jpg'
-import { Link } from 'react-router-dom';
 import '../Styles/aboutMe.css';
-// import './GitHubRepoCarousel.css'
 import { motion } from 'framer-motion';
+import RootLayout from '../layouts/RootLayOut';
 
 
 function AboutMe() {
@@ -13,15 +11,15 @@ function AboutMe() {
     const enterAnimation = { opacity: 1, transition: { duration: 1, delay: 0.5 } };
 
     return (
-        <>
+
           <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
           <div className="about-me-container-A">
               <div className='about-me-content-A'>
                   <h1>About Me</h1>
               </div>
-            {/* Content */}
+           
             <div className="about-me-content2-A">
-              {/* <h1>About Me</h1> */}
+             
               <p>
               <br></br>
                   I have successfully transitioned into the dynamic field of software engineering, bringing a wealth of experience as a pre-sales engineer and business consultant. My journey has been characterized by a commitment to continuous learning and a relentless pursuit of knowledge.
@@ -36,17 +34,8 @@ function AboutMe() {
                 <img src={profile} alt="Profile" className="selfie" />
   
               </div>
-            <div className="button-container-A">
-            <Link to="/" className="home-link-button">
-              <div className="button-content">
-                <img src={sphere} alt="Sphere" className="button-image" />
-                <span>Go Back to Home</span>
-              </div>
-            </Link>
-          </div>
           </div>
           </motion.div>
-    </>
   );
 }
 

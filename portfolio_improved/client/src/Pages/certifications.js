@@ -1,12 +1,7 @@
 import React from 'react';
 import cert from '../static/aws-certified-cloud-practitioner.png';
-// import profile from './static/PROFILE_PIC.jpg'
-import { Link } from 'react-router-dom';
 import '../Styles/certifications.css';
-// import './GitHubRepoCarousel.css'
 import { motion } from 'framer-motion';
-import threads from '../static/pyramid-double.gif';
-
 
 function Certifications() {
 
@@ -14,36 +9,27 @@ function Certifications() {
     const enterAnimation = { opacity: 1, transition: { duration: 1, delay: 0.5 } };
 
     return (
-        <div className="cert-container">
+        
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
-    <div class="scroll-container">
-    <div className="about-me-container">
-        <div className='about-me-contentB'>
-            <h1>Certifications</h1>
-        </div>
-      {/* Content */}
-      <div className="about-me-content2">
-        {/* <h1>About Me</h1> */}
-        <p>
-        <br></br>
-            
-        <img src={cert} alt="Certification" className="cert-image" />
+          <div className="certification-container">
+              <div className='certification-contentB'>
+                  <h1>Certifications</h1>
+              </div>
+            {/* Content */}
+            <div className='certification-content1'>
+              <div className="certification-content2">
+                
+                <p>
+                <br></br>
+                    
+                <img src={cert} alt="Certification" className="cert-image" />
 
-          {/* Add your "About Me" text here */}
-        </p>
-      </div>
-      <div className="button-container">
-      <Link to="/" className="home-link-button">
-        <div className="button-content">
-          <img src={threads} alt="Sphere" className="button-image" />
-          <span>Go Back to Home</span>
-        </div>
-      </Link>
-    </div>
-    </div>
-    </div>
+                </p>
+              </div>
+            </div>
+          </div>
     </motion.div>
-    </div>
+    
   );
 }
 

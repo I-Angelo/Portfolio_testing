@@ -1,5 +1,15 @@
 /* Index.css */
 /* Reset some default browser styles */
+
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;

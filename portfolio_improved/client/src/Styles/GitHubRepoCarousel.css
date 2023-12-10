@@ -1,3 +1,16 @@
+/* styles.css */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Other styles follow... */
+
+
+
+
 /* Custom styles for the GitHubRepoCarousel */
 .github-repo-slide {
   /* background-color: #2e8aa3; */
@@ -11,14 +24,15 @@
   text-align: center; /* Center-align all content horizontally */
 }
 
-.title h1 {
-  color: rgb(47, 119, 164);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the shadow values as needed */
+.title-G h1 {
+  color: rgb(12, 37, 89);
+  text-shadow: 2px 2px 4px rgb(253, 253, 253); /* Adjust the shadow values as needed */
   font-size: 50px !important;
   margin: 5px 5px;
   margin-bottom: 150px !important;
   margin-top: 100px !important;
   padding: 5px;
+  text-align: center;
 }
 
 .github-repo-slide h2 {
@@ -72,7 +86,7 @@ h2 {
 }
 
 .slick-slider.slick-initialized { /* MAIN SLIDE IN CENTER*/
-  max-width: 500px;
+  max-width: 500px ;
   height: 220px;
   background-color: #1d2339; /* background main slide */ 
   border: 1px solid #ddd;
@@ -86,6 +100,10 @@ h2 {
   align-items: center;
   text-align: center;
   display: flex;
+}
+/* width of the carousel container */
+.slick-slider {
+  width: 50vw !important;
 }
 
 .slick-slide {
@@ -131,7 +149,7 @@ h2 {
 
 @media (max-width: 768px) {
   .mobile-view {
-    width: 80%; /* Make it 5% smaller */
+    width: 60%; /* Make it 5% smaller */
     margin-left: 50px;;
 
     /* Additional styles for mobile devices if needed */
