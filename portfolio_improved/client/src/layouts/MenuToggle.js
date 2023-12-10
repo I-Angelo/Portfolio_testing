@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import '../Styles/Menu.css'
-import workstation from '../static/5243758.jpg';
+import workstation from '../static/5243758.png';
 import { Link } from 'react-router-dom';
 // import "../PDF/UPDATED_Ivan_Angulo_Engineer_1.pdf"
 
