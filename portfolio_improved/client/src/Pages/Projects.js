@@ -12,8 +12,8 @@ const subsectionsData = [
 
 function Projects() {
 
-    const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0 } };
-    const enterAnimation = { opacity: 1, transition: { duration: 1.5, delay: 2 } };
+    const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0.5 } };
+    const enterAnimation = { opacity: 1, transition: { duration: 1, delay: 0.5 } };
 
     return (
 

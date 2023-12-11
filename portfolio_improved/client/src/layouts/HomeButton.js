@@ -23,7 +23,7 @@ function HomeButton () {
         <Link to="/" className="home-link-button-B">
           <div className="button-content">
             <img src={pyramid} alt="pyramid" className="button-image" />
-            <span>Go Back to Home</span>
+            <span>Go Back to Work Station</span>
           </div>
         </Link>
         </div>

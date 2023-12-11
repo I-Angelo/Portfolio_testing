@@ -11,7 +11,7 @@
     width: 150px !important;
     height: 150px !important;
 }
-
+/* make image pulsate */
 .pulsate-menu-image {
     animation: pulse 2s infinite; /* Adjust the duration as needed */
   }
@@ -29,7 +29,7 @@
   }
   
 
-/* log in menu */
+/* log in menu for myself (lock)*/
 
 .custom-icon {
     position: fixed;
@@ -91,6 +91,8 @@
     transition: background-color 0.3s ease; /* Smooth transition for background-color */
     z-index: 3;
 }
+
+/* welcome sign */
   
   @keyframes fadeInAndMove {
     0% {
@@ -190,45 +192,16 @@
 
 /* Rotation of content to become horizontal */
 
-.menu-item:nth-child(2) a {
+.github {
     transform: rotate(-51.428571deg) ;
-}
+    /* transform: perspective(1000px) rotateY(720deg); */
+ 
+} 
 
-.menu-item:nth-child(3) a {
-    transform: rotate(-102.85714deg) ;
-
-}.menu-item:nth-child(4) a {
+.certifications {
     transform: rotate(-154.285713deg) ;
-}
-
-.menu-item:nth-child(5) a {
-    transform: rotate(-205.714284deg) ;
-}
-
-.menu-item:nth-child(6) a {
-    transform: rotate(-257.142855deg) ;
-}
-
-.menu-item:nth-child(7) a {
-    transform: rotate(-308.571426deg) ;
-}
-
-.menu-item:nth-child(6) a {
-    /* transform: rotate(-257.142855deg); */
-    z-index: 1 !important; /* Adjust the z-index */
-    opacity: 1;
-    /* Other styles */
-}
-/* fixing shadows */
-
-.menu-item:nth-child(7) a {
-    /* transform: rotate(-308.571426deg); */
-    z-index: 1 !important; /* Adjust the z-index */
-    opacity: 1;
-    /* Other styles */
-}
-
-
+ 
+} 
 
 .menu-toggler + label {
     width: 40px;
@@ -325,6 +298,95 @@
     text-shadow: 4px 4px 8px rgba(24, 33, 132, 0.5); /* Adjust the values to control the shadow effect */
     
 }
+
+  
+  .rotate {
+    transform: perspective(1000px) rotateY(720deg);
+  }
+  
+
+  /* CSS for the spinning effect */
+
+  /* Your existing CSS */
+
+/* Styles for the initial horizontal orientation (text)  */
+.menu-item .about {
+    transform: rotate(0); /* Change as per your required rotation */
+  }
+  
+.menu-item .github {
+transform: rotate(-51.428571deg); /* Change as per your required rotation */
+}
+
+.menu-item .linkedin {
+    transform: rotate(-102.85714deg); /* Change as per your required rotation */
+    }
+
+.menu-item .certifications {
+    transform: rotate(-154.285713deg); /* Change as per your required rotation */
+}
+    
+.menu-item .projects {
+    transform: rotate(-205.714284deg); /* Change as per your required rotation */
+    }
+
+.menu-item .contact {
+    transform: rotate(-257.142855deg); /* Change as per your required rotation */
+    }
+
+.menu-item .resume {
+    transform: rotate(-308.571426deg); /* Change as per your required rotation */
+    }
+
+  
+  /* Add similar styles for other menu items with their respective rotations */
+  
+  /* Styles for spinning effect on click */
+  .rotate {
+    transition: transform 0.5s;
+  }
+  
+  .menu-item .rotate {
+    transform: rotateY(1440deg);
+  }
+  
+  /* Additional classes for spinning effect on each menu item */
+  .about.rotate {
+    transform: rotate(0) rotateY(1440deg);
+  }
+  
+  .github.rotate {
+    transform: rotate(-51.428571deg) rotateY(1440deg);
+  }
+
+  .linkedin.rotate {
+    transform: rotate(-102.85714deg) rotateY(1440deg);
+  }
+
+  .certifications.rotate {
+    transform: rotate(-154.285713deg) rotateY(1440deg);
+  }
+
+  .projects.rotate {
+    transform: rotate(-205.714284deg) rotateY(1440deg);
+  }
+
+  .contact.rotate {
+    transform: rotate(-257.142855deg) rotateY(1440deg);
+  }
+
+  .resume.rotate {
+    transform: rotate(-308.571426deg) rotateY(1440deg);
+  }
+  
+  /* Add similar classes for other menu items */
+  
+  
+
+
+
+  
+  
 
 .menu-item a span {
     transform: none;
