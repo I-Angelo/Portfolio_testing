@@ -29,8 +29,8 @@ body, html {
    */
   .App {
     /* position: relative; */
-    background: rgb(240,235,229);
-    background: radial-gradient(circle, rgba(240,235,229,1) 0%, rgba(64,0,230,1) 100%);
+    /* background: rgb(240,235,229);
+background: radial-gradient(circle, rgba(240,235,229,1) 0%, rgba(240,235,229,1) 15%, rgba(35,184,15,1) 100%); */
     /* Add styles for other content elements */
     /* These styles will be placed on top of the background */
   }
