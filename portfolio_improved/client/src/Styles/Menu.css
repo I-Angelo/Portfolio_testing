@@ -190,18 +190,6 @@
     pointer-events: auto;
 }
 
-/* Rotation of content to become horizontal */
-
-.github {
-    transform: rotate(-51.428571deg) ;
-    /* transform: perspective(1000px) rotateY(720deg); */
- 
-} 
-
-.certifications {
-    transform: rotate(-154.285713deg) ;
- 
-} 
 
 .menu-toggler + label {
     width: 40px;
@@ -307,8 +295,6 @@
 
   /* CSS for the spinning effect */
 
-  /* Your existing CSS */
-
 /* Styles for the initial horizontal orientation (text)  */
 .menu-item .about {
     transform: rotate(0); /* Change as per your required rotation */
@@ -338,8 +324,6 @@ transform: rotate(-51.428571deg); /* Change as per your required rotation */
     transform: rotate(-308.571426deg); /* Change as per your required rotation */
     }
 
-  
-  /* Add similar styles for other menu items with their respective rotations */
   
   /* Styles for spinning effect on click */
   .rotate {
@@ -378,12 +362,6 @@ transform: rotate(-51.428571deg); /* Change as per your required rotation */
   .resume.rotate {
     transform: rotate(-308.571426deg) rotateY(1440deg);
   }
-  
-  /* Add similar classes for other menu items */
-  
-  
-
-
 
   
   
@@ -394,7 +372,6 @@ transform: rotate(-51.428571deg); /* Change as per your required rotation */
 
 /* Shadow */
 a {
-    /* position: relative; */
     -webkit-box-reflect: below 5px linear-gradient(transparent, rgba(0,0,0,.1));
     font-size: 20px;
     z-index: -20 !important;
@@ -455,13 +432,11 @@ a {
 @media (max-width: 768px) {
     /* Styles for smaller screens (e.g., mobile devices) */
     .menu-toggler {
-        /* transform: translate(-500px); */
       width: 30px; /* Reduce the width for the menu-toggler */
       height: 30px; /* Reduce the height for the menu-toggler */
     }
   
     .menu-toggler:checked ~ ul .menu-item {
-        /* transform: translate(-500px); */
       width: 150px; /* Reduce the width of menu items */
       height: 150px; /* Reduce the height of menu items */
     }
@@ -532,13 +507,92 @@ a {
         /* filter: saturate(200%); */
     }
 
+    /* spinning */
+
+    .menu-item .about {
+        transform: rotate(0); /* Change as per your required rotation */
+      }
+      
+    .menu-item .github {
+    transform: rotate(-51.428571deg); /* Change as per your required rotation */
+    }
+    
+    .menu-item .linkedin {
+        transform: rotate(-102.85714deg); /* Change as per your required rotation */
+        }
+    
+    .menu-item .certifications {
+        transform: rotate(-154.285713deg); /* Change as per your required rotation */
+    }
+        
+    .menu-item .projects {
+        transform: rotate(-205.714284deg); /* Change as per your required rotation */
+        }
+    
+    .menu-item .contact {
+        transform: rotate(-257.142855deg); /* Change as per your required rotation */
+        }
+    
+    .menu-item .resume {
+        transform: rotate(-308.571426deg); /* Change as per your required rotation */
+        }
+    
+      
+      /* Styles for spinning effect on click */
+
+      .rotate {
+        transform: perspective(1000px) rotateY(720deg);
+      }
+      .rotate {
+        transition: transform 0.5s;
+      }
+      
+      .menu-item .rotate {
+        transform: rotateY(360deg);
+      }
+      
+      /* Additional classes for spinning effect on each menu item */
+      .about.rotate {
+        transform: rotate(0) rotateY(360deg);
+      }
+      
+      .github.rotate {
+        transform: rotate(-51.428571deg) rotateY(360deg);
+      }
+    
+      .linkedin.rotate {
+        transform: rotate(-102.85714deg) rotateY(360deg);
+      }
+    
+      .certifications.rotate {
+        transform: rotate(-154.285713deg) rotateY(360deg);
+      }
+    
+      .projects.rotate {
+        transform: rotate(-205.714284deg) rotateY(360deg);
+      }
+    
+      .contact.rotate {
+        transform: rotate(-257.142855deg) rotateY(360deg);
+      }
+    
+      .resume.rotate {
+        transform: rotate(-308.571426deg) rotateY(360deg);
+      }
+    
+
+
+
+
+
+
     .menu {
-        position: absolute !important;
-        display: flex !important;
-        justify-content: center !important;
+        position: absolute ;
+        display: flex ;
+        justify-content: center ;
         margin: auto;
-        width: 100px !important;
-        height: 100px !important;
+        width: 100px ;
+        height: 100px ;
         
     }
 

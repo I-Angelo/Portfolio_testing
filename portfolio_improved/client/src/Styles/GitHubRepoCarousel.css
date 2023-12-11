@@ -22,6 +22,7 @@ p {
   max-width: 300px; /* Reduced maximum width */
   margin: 0 auto;
   text-align: center; /* Center-align all content horizontally */
+  
 }
 
 .title-G h1 {
@@ -46,7 +47,7 @@ p {
 }
 
 .github-repo-slide a {
-  color: #617c9a; /* View On Github color*/
+  color: #93619a; /* View On Github color*/
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a strong shadow */
 }
@@ -60,6 +61,10 @@ p {
   display: flex !important;
   justify-content: space-between !important;
 }
+
+/* .mobile-view {
+  height: 10px;
+} */
 
 h2 {
   font-family: 'Times New Roman', Times, serif;
@@ -85,29 +90,48 @@ h2 {
   margin: 0 auto; /* Center-align the image horizontally */
 }
 
+.mobile-view {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+
 .slick-slider.slick-initialized { /* MAIN SLIDE IN CENTER*/
   max-width: 500px ;
-  height: 220px;
+  /* height: 220px !important; */
   background-color: #1d2339; /* background main slide */ 
   border: 1px solid #ddd;
   padding: 20px;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  max-width: 500px;
   margin: 0 ;
   text-align: center; /* Center-align content */
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4) !important;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
+  justify-content: center  !important;
+  /* align-items: center; */
+  /* text-align: center; */
+  display: flex !important;
 }
 /* width of the carousel container */
 .slick-slider {
   width: 50vw !important;
+  /* height: 50px; */
 }
 
+.slick-track {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .slick-current .slickactive .slick-slide {
+  height: 500px !important;
+} */
+
 .slick-slide {
-  height: 170px;
+  height: 200px !important;
   width: 350px;
   text-align: center;
   margin: 0 auto;
@@ -121,6 +145,7 @@ h2 {
   /* vertically - centered */
   justify-content: center;
   align-items: center;
+  /* height: 50px; */
   
   /* Set a fixed width and height for the container (optional) */
   width: 400px;
@@ -148,12 +173,99 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .mobile-view {
-    width: 60%; /* Make it 5% smaller */
-    margin-left: 50px;;
 
-    /* Additional styles for mobile devices if needed */
+  .parent-mobile-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+  .mobile-view {
+    width: 100%; /* Make it 5% smaller */
+    /* height: 500px; */
+  }
+
+  /* black box container */
+
+  .slick-slider.slick-initialized { /* MAIN SLIDE IN CENTER*/
+    /* max-width: 600px ; */
+    max-height: 220px !important;
+    background-color: #1d2339; /* background main slide */ 
+    border: 1px solid #ddd;
+    padding: 20px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    width: 275px !important;
+    margin: 0 ;
+    text-align: center; /* Center-align content */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4) !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+  /* width of the carousel container */
+  .slick-slider {
+    width: 50vw !important;
+    max-height: 200px !important;
+  }
+
+
+
+  .slick-slide {
+    height: 175px !important;
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+  }
+
+  .github-repo-slide {
+    /* background-color: #2e8aa3; */
+    display: flex;
+    flex-direction: column;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(58,58,125,0.7861519607843137) 16%, rgba(0,140,255,0.9206057422969187) 44%);
+    border: 1px solid #ddd;
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 200px; /* Reduced maximum width */
+    margin: 0 auto;
+    text-align: center; /* Center-align all content horizontally */
+    height: 100px !important;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 15px !important;
+    margin-bottom: 2px !important;
+  }
+
+  a {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 10px !important;
+    margin: 0 !important;
+    padding: 0;
+  }
+
+  /* .slick-active { */
+    /* max-height: 5px !important; */
+  /* } */
+
+  /* .slick-current { */
+    /* max-height: 5px !important; */
+  /* } */
+
+
+/* acrtive slide properties */
+  .slick-list {
+    max-height: 90px;
+    
+  }
+  
 }
 /* / */
 /* //GitHubRepoCarousel.css  */

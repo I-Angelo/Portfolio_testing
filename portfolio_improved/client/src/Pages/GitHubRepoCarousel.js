@@ -55,41 +55,43 @@ const GitHubRepoCarousel = () => {
 
   return (
   // className="repo-container"
-    <div > 
+  
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}
     >
       <div className='title-G'>
         <h1>GitHub</h1>
       </div>
-    <div className="mobile-view">
-      <Slider
-        {...carouselSettings}
-        style={{
-          maxWidth: '90%', // Adjust the width as needed
-          margin: '0 auto', // Center-align the Slider
-        }}
-      >
-        {isLoading ? (
-          <p>Loading...</p>
-        ) : (
-          repoData.map((repo) => (
-            <div key={repo.id} className="github-repo-slide">
-              <h2>{repo.name}</h2>
-              <p>{repo.description}</p>
-              <p>
-                <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                  View on GitHub
-                </a>
-              </p>
-              <p>Last Updated: {new Date(repo.updated_at).toLocaleDateString()}</p>
-              <p>Primary Language: {repo.language}</p>
-            </div>
-          ))
-        )}
-      </Slider>
-    </div>
+      <div className='parent-mobile-view'>
+        <div className="mobile-view">
+          <Slider
+            {...carouselSettings}
+            style={{
+              maxWidth: '90%', // Adjust the width as needed
+              margin: '0 auto', // Center-align the Slider
+            }}
+          >
+            {isLoading ? (
+              <p>Loading...</p>
+            ) : (
+              repoData.map((repo) => (
+                <div key={repo.id} className="github-repo-slide">
+                  <h2>{repo.name}</h2>
+                  <p>{repo.description}</p>
+                  <p>
+                    <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                      View on GitHub
+                    </a>
+                  </p>
+                  <p>Last Updated: {new Date(repo.updated_at).toLocaleDateString()}</p>
+                  <p>Primary Language: {repo.language}</p>
+                </div>
+              ))
+            )}
+          </Slider>
+        </div>
+      </div>
     </motion.div>
-    </div>
+    
 
   );
 };

@@ -27,14 +27,14 @@ body, html {
     text-shadow: 2px 2px 4px rgb(253, 253, 253);
 }
    */
-  .App {
+  /* .App { */
     /* position: relative; */
     /* background: rgb(240,235,229);
 background: radial-gradient(circle, rgba(240,235,229,1) 0%, rgba(240,235,229,1) 15%, rgba(35,184,15,1) 100%); */
     /* Add styles for other content elements */
     /* These styles will be placed on top of the background */
-  }
-  
+  /* } */
+  /*  */
 @media (max-width: 780px) {
     .background {
         height: 900px; /* Adjust the height as needed */

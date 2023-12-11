@@ -70,12 +70,12 @@ h1 {
       text-align: center; /* Center-align text for smaller screens */
     }
 
-    .cert-container{
-        margin-top: 100px;
+    .certification-content1{
+        margin-top: 10px;
     }
 
     .certification-container {
-        margin-top: 200px;
+        margin-top: 40px;
     }
   
     .button-container {

@@ -5,28 +5,12 @@ import { motion } from 'framer-motion';
 import '../Styles/Menu.css'
 import workstation from '../static/5243758.png';
 import { Link } from 'react-router-dom';
-// import "../PDF/UPDATED_Ivan_Angulo_Engineer_1.pdf"
 
 const MenuToggle = () => {
   console.log('MenuToggle component mounted');
   const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0 } };
   const enterAnimation = { opacity: 1, transition: { duration: 1.5, delay: 2 } };
 
-//   spinning effect function
-// const rotateCircle = (nthChild) => {
-//     console.log('Initialized rotation');
-//     const circleParent = document.querySelector(`.clickable-list li:nth-child(${nthChild})`);
-//     const circles = circleParent.querySelectorAll('.circle');
-  
-//     circles.forEach((circle, index) => {
-//       if (index === nthChild - 1) {
-//         circle.classList.toggle('rotate');
-//         console.log('Finalized rotation');
-//       } else {
-//         circle.classList.remove('rotate');
-//       }
-//     });
-//   };
 
 const rotateCircle = (id) => {
     console.log('initialized')
