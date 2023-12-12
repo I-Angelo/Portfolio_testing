@@ -8,8 +8,8 @@
     right: 0;
     left: 0;
     margin: auto; /* centers tessarect in the center of the pager*/
-    width: 150px !important;
-    height: 150px !important;
+    width: 150px ;
+    height: 150px ;
 }
 /* make image pulsate */
 .pulsate-menu-image {
@@ -232,7 +232,7 @@
 }
 
 
-
+/* location open items on the screen */
 .menu-item {
     position: fixed;
     display: flex; /*Center content horizontally*/
@@ -442,6 +442,7 @@ a {
     }
 
   
+    /* translateY(-80) is the distance from the center */
   
     .menu-item a.menu-item-index {
       width: 75px; /* Reduce the width of menu item circles */
@@ -449,30 +450,30 @@ a {
       font-size: 8px; /* Reduce the font size for menu item text */
     }
     .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
-        transform: rotate(0deg) translateY(-100px) translateX(0);
+        transform: rotate(0deg) translateY(-80px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(2) {
-        transform: rotate(51.428571deg) translateY(-100px) translateX(0);
+        transform: rotate(51.428571deg) translateY(-80px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
-        transform: rotate(102.85714deg) translateY(-100px) translateX(0);
+        transform: rotate(102.85714deg) translateY(-80px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
-        transform: rotate(154.285713deg) translateY(-100px) translateX(0);
+        transform: rotate(154.285713deg) translateY(-80px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(5) {
-        transform: rotate(205.714284deg) translateY(-100px) translateX(0);
+        transform: rotate(205.714284deg) translateY(-80px) translateX(0);
     }
     .menu-toggler:checked ~ ul .menu-item:nth-child(6) {
-        transform: rotate(257.142855deg) translateY(-100px) translateX(0);
+        transform: rotate(257.142855deg) translateY(-90px) translateX(0);
     }
 
     .menu-toggler:checked ~ ul .menu-item:nth-child(7) {
-        transform: rotate(308.571426deg) translateY(-100px) translateX(0);
+        transform: rotate(308.571426deg) translateY(-80px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item a {
@@ -581,20 +582,50 @@ a {
       }
     
 
-
-
-
-
-
-    .menu {
+    .menu  {
         position: absolute ;
         display: flex ;
         justify-content: center ;
         margin: auto;
-        width: 100px ;
-        height: 100px ;
+        width: 110px !important;
+        height: 110px !important;
+        padding-top: 50px;
         
     }
+
+    .menu-toggler {
+        padding-top: 50px;
+    }
+
+    #menu-toggler {
+        position: absolute;
+        margin-top: 70px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* location of the menu items open in relation on the screen */
+
+    .menu-item {
+        position: fixed;
+        display: flex; /*Center content horizontally*/
+        justify-content: center; /* Center content horizontally */
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+        transition: 0.5s;
+        transform-origin: center;
+        top: 60px; /*. to move the menu itmes open down on Y axis*/
+        transform: rotate(-15deg); /*Adjust the initial rotation angle as needed*/
+
+    }
+
+
 
   }
 
