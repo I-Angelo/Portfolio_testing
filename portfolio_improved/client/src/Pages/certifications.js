@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useEffect }from 'react';
 import cert from '../static/aws-certified-cloud-practitioner.png';
 import '../Styles/certifications.css';
 import { motion } from 'framer-motion';
@@ -7,6 +7,20 @@ function Certifications() {
 
     const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0.5 } };
     const enterAnimation = { opacity: 1, transition: { duration: 1, delay: 0.5 } };
+
+    useEffect(() => {
+      // Disable scrolling when the Menu component mounts
+      disableScroll();
+      // Enable scrolling when the component unmounts
+      return () => {
+        document.body.style.overflow = ''; // Restore default scrolling
+      };
+    }, []);
+  
+    function disableScroll() {
+      document.body.style.overflow = 'hidden';
+    }
+  
 
     return (
         

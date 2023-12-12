@@ -3,9 +3,8 @@ import axios from 'axios';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import '../Styles/GitHubRepoCarousel.css';
-import hurricane from '../static/pyramid-double.gif';
 import GITHUB_API_TOKEN from '../config/config.js';
 import { motion } from 'framer-motion';
 
@@ -20,6 +19,21 @@ const GitHubRepoCarousel = () => {
   const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0 } };
     // const animation = {opacity: 1};
     const enterAnimation = { opacity: 1, transition: { duration: 1.5, delay: 2 } };
+
+    useEffect(() => {
+      // Disable scrolling when the Menu component mounts
+      disableScroll();
+      // Enable scrolling when the component unmounts
+      return () => {
+        document.body.style.overflow = ''; // Restore default scrolling
+      };
+    }, []);
+  
+    function disableScroll() {
+      document.body.style.overflow = 'hidden';
+    }
+  
+
 
   useEffect(() => {
     axios

@@ -1,15 +1,21 @@
 // MenuToggle.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import '../Styles/Menu.css'
 import workstation from '../static/5243758.png';
 import { Link } from 'react-router-dom';
 
+
+
+
 const MenuToggle = () => {
   console.log('MenuToggle component mounted');
+
   const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0 } };
   const enterAnimation = { opacity: 1, transition: { duration: 1.5, delay: 2 } };
+
+  
 
 
 const rotateCircle = (id) => {
@@ -32,6 +38,26 @@ const rotateCircle = (id) => {
       // Open a new window or tab with the specified URL
       window.open(url, '_blank');
     };
+
+
+
+    useEffect(() => {
+        const toggle = document.getElementById('menu-toggler');
+        const menu = document.getElementById('yourMenuID');
+      
+        const handleScroll = () => {
+          const toggleRect = toggle.getBoundingClientRect();
+          menu.style.top = `${toggleRect.top}px`;
+          menu.style.left = `${toggleRect.left}px`;
+        };
+      
+        window.addEventListener('scroll', handleScroll);
+      
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+      
 
 return (
 

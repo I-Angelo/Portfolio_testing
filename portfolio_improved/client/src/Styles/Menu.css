@@ -589,17 +589,18 @@ a {
         margin: auto;
         width: 110px !important;
         height: 110px !important;
-        padding-top: 50px;
+        padding-top: 130px; /* */
         
     }
-
+    /* postion of the toggler */
     .menu-toggler {
-        padding-top: 50px;
+        padding-top: 150px;
+        /* position: sticky; */
     }
 
     #menu-toggler {
         position: absolute;
-        margin-top: 70px;
+        margin-top: 150px;
         width: 50px;
         height: 50px;
     }
@@ -620,11 +621,10 @@ a {
         opacity: 0;
         transition: 0.5s;
         transform-origin: center;
-        top: 60px; /*. to move the menu itmes open down on Y axis*/
+        top: 160px; /*. to move the menu itmes open down on Y axis*/
         transform: rotate(-15deg); /*Adjust the initial rotation angle as needed*/
 
     }
-
 
 
   }
