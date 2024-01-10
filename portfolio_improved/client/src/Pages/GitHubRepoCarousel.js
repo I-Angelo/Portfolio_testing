@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 import '../Styles/GitHubRepoCarousel.css';
 import GITHUB_API_TOKEN from '../config/config.js';
 import { motion } from 'framer-motion';
+import GitHubTitle from '../layouts/GitHubTitle.js';
 
 console.log("GitHub API Token:", GITHUB_API_TOKEN);
 
@@ -20,19 +21,6 @@ const GitHubRepoCarousel = () => {
     // const animation = {opacity: 1};
     const enterAnimation = { opacity: 1, transition: { duration: 1.5, delay: 2 } };
 
-    useEffect(() => {
-      // Disable scrolling when the Menu component mounts
-      disableScroll();
-      // Enable scrolling when the component unmounts
-      return () => {
-        document.body.style.overflow = ''; // Restore default scrolling
-      };
-    }, []);
-  
-    function disableScroll() {
-      document.body.style.overflow = 'hidden';
-    }
-  
 
 
   useEffect(() => {
@@ -72,10 +60,11 @@ const GitHubRepoCarousel = () => {
   
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}
     >
-      <div className='title-G'>
+      <GitHubTitle/>
+      {/* <div className='title-G'>
         <h1>GitHub</h1>
-      </div>
-      <div className='parent-mobile-view'>
+      </div> */}
+      <div className='parent-carousel-container'>
         <div className="mobile-view">
           <Slider
             {...carouselSettings}
@@ -115,3 +104,18 @@ export default GitHubRepoCarousel;
 
 
 // GitHubRepoCarousel.js
+
+/*.
+    useEffect(() => {
+      // Disable scrolling when the Menu component mounts
+      disableScroll();
+      // Enable scrolling when the component unmounts
+      return () => {
+        document.body.style.overflow = ''; // Restore default scrolling
+      };
+    }, []);
+  
+    function disableScroll() {
+      document.body.style.overflow = 'hidden';
+    }
+   */

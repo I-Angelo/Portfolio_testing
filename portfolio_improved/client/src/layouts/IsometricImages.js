@@ -1,3 +1,4 @@
+//IdometricImages.js
 import React from "react";
 import '../Styles/IsometricImages.css'; // Import your CSS file for styling
 import { motion } from 'framer-motion';

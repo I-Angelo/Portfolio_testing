@@ -1,10 +1,15 @@
 // Login.js
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import sphere2 from '../static/sphere2.gif';
+import { useNavigate } from 'react-router-dom';
 import '../Styles/LogIn.css'
+import { motion } from "framer-motion"
 
 const Login = ({ onLogin }) => {
+
+    const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0.5}}
+    const enterAnimation = { opacity: 1, transition: {duration: 1, delay: 0.5}}
+
+
     const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -48,6 +53,7 @@ const Login = ({ onLogin }) => {
     };
     
     return (
+        <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
         <div>
             <div className='login'>
                 <div>
@@ -66,19 +72,10 @@ const Login = ({ onLogin }) => {
                 <br />
                     <button onClick={handleLogin}>Login</button>
                 </div>
-
-                <div className="button-container">
-                <Link to="/" className="home-link-button">
-                <div className="button-content">
-                    <img src={sphere2} alt="Sphere" className="button-image" />
-                    <span>Go Back to Home</span>
-                </div>
-                </Link>
-                </div>
-
             </div>
 
         </div>
+        </motion.div>
     );
     };
 

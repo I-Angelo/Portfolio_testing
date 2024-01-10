@@ -5,7 +5,7 @@ import GlobalWorkerOptions from '../config/PDFConfig'; // Update the path based 
 
 function PDFViewer() {
 
-    const pdfURL = '../../public/PDF/UPDATES_Sales_Engineer2.pdf';
+    const pdfURL = '../../public/PDF/UPD_Ivan_Angulo_Engineer2.pdf';
 
   return (
     <div>

@@ -12,7 +12,9 @@ const GreetingMessage = () => {
   return (
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
       <div className='parent'>
-        <div className='welcome'>Welcome to my Portfolio!</div>
+        <div className='welcome'>
+          <h1>Welcome to my Portfolio!</h1>
+        </div>
       </div>
     </motion.div>
   );

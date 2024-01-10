@@ -17,6 +17,7 @@ import WelcomePage from '../../Pages/WelcomePage';
 import DataDisplay from '../../Pages/dataBaseData';
 import PDFViewer from '../../Pages/Resume';
 import RootLayout from '../../layouts/RootLayOut';
+import Logout from '../../Pages/LogOut';
 
 console.log('Creating router...');
 
@@ -54,15 +55,15 @@ function AnimatedRoutes() {
                   
                   {/* Route for About Me */}
                   <Route path="/login" element={<Login />} />
+
+                  {/* Route for About Me */}
+                  <Route path="/logout" element={<Logout />} />
                   
                   {/* Route for About Me */}
                   <Route path="/welcome" element={<WelcomePage />} />
 
                   {/* Route for About Me */}
                   <Route path="/data" element={<DataDisplay />} />
-
-                  {/* Route for About Me */}
-                  <Route path="/logout" element={<Menu />} />
 
                   {/* Route for About Me */}
                   <Route path="/resume" element={<PDFViewer />} />

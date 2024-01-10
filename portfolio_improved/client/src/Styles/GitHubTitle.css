@@ -1,25 +1,23 @@
-/* body {
-  font-size: 25px;
-} */
-
-
-.parent {
-    position: absolute; 
-    top: 10%;
+.GitHubTitleParent {
+    position: relative; 
+    top: 10vh;
     margin-top: -20vh; /* Adjust this value as needed */
     margin: 0;
     text-align: center;
     background-color: rgba(218, 208, 208, 0);
     color: rgb(17, 34, 96);
+    /* padding-bottom: 30px; */
+    
 
 }
 
   
-.welcome {
-  color: rgb(25, 44, 128); /* Change to white for testing */
-  text-shadow: 3px 3px 5px rgb(247, 246, 246);
-  font-size: 40px;
-  animation: fadeInAndMove 3s ease-out;  
+.GitHubTitleWelcome {
+    color: rgb(25, 44, 128); /* Change to white for testing */
+    text-shadow: 3px 3px 5px rgb(247, 246, 246);
+    font-size: 40px;
+    padding-bottom: 30px;
+    /* animation: fadeInAndMove 3s ease-out;   */
 }
 
   

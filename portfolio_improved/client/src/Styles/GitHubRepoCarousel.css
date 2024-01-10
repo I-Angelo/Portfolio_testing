@@ -8,7 +8,14 @@ p {
 
 /* Other styles follow... */
 
+.parent-carousel-container {
 
+  display: flex;
+  flex-direction: column;
+  min-height: 35vh;
+  margin-top: 200px;
+
+}
 
 
 /* Custom styles for the GitHubRepoCarousel */
@@ -173,17 +180,17 @@ h2 {
 }
 
 @media (max-width: 768px) {
-
-  .parent-mobile-view {
+/* 
+  .parent-carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
-  .mobile-view {
+  /* .mobile-view {
     width: 100%; /* Make it 5% smaller */
-    /* height: 500px; */
-  }
+    /* height: 500px; 
+  } */
 
   /* black box container */
 

@@ -2,6 +2,8 @@
 import React from 'react';
 import loginIcon from '../static/loginicon.png'; 
 
+
+
 const LogInIcon = () => (
   <div className="custom-icon">
     <img src={loginIcon} alt="Log In Icon" /> 
@@ -9,3 +11,5 @@ const LogInIcon = () => (
 );
 
 export default LogInIcon;
+
+

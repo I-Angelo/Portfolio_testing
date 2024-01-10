@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import '../Styles/contactMe.css'
 import { motion } from 'framer-motion';
 import '../Styles/contactMe.css'
+import ContactMeTitle from '../layouts/ContactMeTitle';
 
 
 
@@ -10,22 +11,10 @@ function ContactMe() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0 } };
-  const enterAnimation = { opacity: 1, transition: { duration: 1.5, delay: 2 } };
+  const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0.5 } };
+  const enterAnimation = { opacity: 1, transition: { duration: 1.5, delay: 1 } };
 
-  useEffect(() => {
-    // Disable scrolling when the Menu component mounts
-    disableScroll();
-    // Enable scrolling when the component unmounts
-    return () => {
-      document.body.style.overflow = ''; // Restore default scrolling
-    };
-  }, []);
-
-  function disableScroll() {
-    document.body.style.overflow = 'hidden';
-  }
-
+  
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -48,10 +37,13 @@ function ContactMe() {
 
   return (
       <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
+
+          <ContactMeTitle/>
+
         <div className="contact-me-container"> 
-          <div className="contact-me-content">
+          {/* <div className="contact-me-content">
             <h1>Contact Me</h1>
-          </div>
+          </div> */}
           <div>
             <form className="contact-form" id='a-form' onSubmit={submitHandler}>
               <div className="personal-info">
@@ -91,5 +83,21 @@ function ContactMe() {
 
 export default ContactMe;
 
+
+
+/*.useEffect(() => {
+    // Disable scrolling when the Menu component mounts
+    disableScroll();
+    // Enable scrolling when the component unmounts
+    return () => {
+      document.body.style.overflow = ''; // Restore default scrolling
+    };
+  }, []);  
+  
+  
+  function disableScroll() {
+    document.body.style.overflow = 'hidden';
+  }
+*/
 
 

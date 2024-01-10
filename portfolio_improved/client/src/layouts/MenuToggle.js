@@ -43,7 +43,7 @@ const rotateCircle = (id) => {
 
     useEffect(() => {
         const toggle = document.getElementById('menu-toggler');
-        const menu = document.getElementById('yourMenuID');
+        const menu = document.getElementById('menu-toggler');
       
         const handleScroll = () => {
           const toggleRect = toggle.getBoundingClientRect();
@@ -131,7 +131,7 @@ return (
                     className="menu-item-index circle resume"
                     target='_blank'
                     rel='nonreferrer'
-                    href='/PDF/UPDATED-Engineer2.pdf' > {/*ALthough we used a more detailed path everywhere else, here we used a relative path */}
+                    href='/PDF/UPD_Ivan_Angulo_Engineer2.pdf' > {/*ALthough we used a more detailed path everywhere else, here we used a relative path */}
                     Resume
                 </a>
                 </li>
